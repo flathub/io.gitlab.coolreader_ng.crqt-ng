@@ -4,12 +4,19 @@ runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 command: crqt
 rename-desktop-file: crqt.desktop
+rename-appdata-file: crqt.appdata.xml
 rename-icon: crqt
 finish-args:
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
   - --device=dri
+cleanup:
+  - '/include'
+  - '/lib/cmake'
+  - '/lib/pkgconfig'
+  - '*.a'
+  - '*.la'
 modules:
   - name: libunibreak
     buildsystem: autotools
@@ -68,8 +75,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crengine-ng.git
-        tag: 0.9.6
-        commit: e9fda0b65a64591e7a2bf4caf50929be77653413
+        tag: 0.9.7
+        commit: fb65ca78f1d3270339eb509b995fffffca624be6
   - name: crqt-ng
     buildsystem: cmake-ninja
     builddir: true
@@ -80,20 +87,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crqt-ng.git
-        tag: 1.0.5.1
-        commit: b351f57ab8197406e57fdac2aae5d29df0751f5f
-    cleanup:
-      - '/share/metainfo/crqt.appdata.xml'
-  - name: crqt-ng-metainfo
-    buildsystem: simple
-    build-commands:
-      - install -D -m 644 crqt-ng.metainfo.xml /app/share/appdata/io.gitlab.coolreader_ng.crqt-ng.metainfo.xml
-    sources:
-      - type: file
-        path: crqt-ng.metainfo.xml
-cleanup:
-  - '/include'
-  - '/lib/cmake'
-  - '/lib/pkgconfig'
-  - '*.a'
-  - '*.la'
+        tag: 1.0.6
+        commit: f81d517de9596a626ea77abe3aaea377e808f4f5
