@@ -32,6 +32,9 @@ modules:
         url: https://github.com/adah1972/libunibreak.git
         tag: libunibreak_5_1
         commit: bce4524907c0e4843106ecf8e20e43c426c90cb1
+        x-checker-data:
+          type: git
+          tag-pattern: ^libunibreak_([\d_]+)$
   - name: utf8proc
     buildsystem: cmake-ninja
     config-opts:
@@ -45,6 +48,9 @@ modules:
         url: https://github.com/JuliaStrings/utf8proc.git
         tag: v2.8.0
         commit: 1cb28a66ca79a0845e99433fd1056257456cef8b
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
   - name: crengine-ng
     buildsystem: cmake-ninja
     builddir: true
@@ -77,6 +83,9 @@ modules:
         url: https://gitlab.com/coolreader-ng/crengine-ng.git
         tag: 0.9.7
         commit: fb65ca78f1d3270339eb509b995fffffca624be6
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\d.]+)$
   - name: crqt-ng
     buildsystem: cmake-ninja
     builddir: true
@@ -89,3 +98,6 @@ modules:
         url: https://gitlab.com/coolreader-ng/crqt-ng.git
         tag: 1.0.7
         commit: 55e0ed013c7e1dc7e4456c13404c9e4fdc210abc
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\d.]+)$
