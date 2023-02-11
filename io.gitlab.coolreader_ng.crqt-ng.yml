@@ -81,8 +81,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crengine-ng.git
-        tag: 0.9.7
-        commit: fb65ca78f1d3270339eb509b995fffffca624be6
+        tag: 0.9.8
+        commit: 61e8b9f9d1c928aec6262e4514693e7eb2d1b5f3
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
@@ -96,8 +96,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crqt-ng.git
-        tag: 1.0.8
-        commit: 2ae1abb4b6da2a014a4d284f4309dd002ab73dcc
+        tag: 1.0.9
+        commit: caa50186cbe5e4cf0fd904a9315cd355303174b6
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
