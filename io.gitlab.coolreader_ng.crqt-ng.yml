@@ -96,8 +96,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crqt-ng.git
-        tag: 1.0.9
-        commit: caa50186cbe5e4cf0fd904a9315cd355303174b6
+        tag: 1.0.10
+        commit: 3b3cc8470bf6b94bff46bcb25b81e3dda6cf6cbe
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
