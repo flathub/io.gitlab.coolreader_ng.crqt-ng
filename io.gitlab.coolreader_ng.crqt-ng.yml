@@ -101,3 +101,5 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
+      - type: patch
+        path: appstream-fix-20240214-1.patch
