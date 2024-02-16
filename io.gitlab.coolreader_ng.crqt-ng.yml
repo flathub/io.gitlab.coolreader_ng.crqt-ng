@@ -67,7 +67,6 @@ modules:
       - -DUSE_CHM=ON
       - -DUSE_ANTIWORD=ON
       - -DUSE_SHASUM=OFF
-      - -DUSE_CMARK=OFF
       - -DUSE_CMARK_GFM=ON
       - -DWITH_LIBPNG=ON
       - -DWITH_LIBJPEG=ON
