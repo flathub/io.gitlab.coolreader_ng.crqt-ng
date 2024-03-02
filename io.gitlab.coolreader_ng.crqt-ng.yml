@@ -30,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/adah1972/libunibreak.git
-        tag: libunibreak_6_0
-        commit: 45b77aead56a52f3b07f706b00be46a7f4216c3c
+        tag: libunibreak_6_1
+        commit: 304585d8e2d63187507368d612c3d5fff1486368
         x-checker-data:
           type: git
           tag-pattern: ^libunibreak_([\d_]+)$
