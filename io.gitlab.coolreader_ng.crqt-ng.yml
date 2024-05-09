@@ -95,10 +95,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crqt-ng.git
-        tag: 1.0.13
-        commit: a783fc5f39d69f16997d5121a65cb2775df00105
+        tag: 1.0.14
+        commit: 3179f1149bfa08fb5110930a785d47491faa9e5d
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
-      - type: patch
-        path: appstream-fix-20240214-1.patch
