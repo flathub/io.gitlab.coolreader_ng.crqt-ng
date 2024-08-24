@@ -61,13 +61,14 @@ modules:
       - -DENABLE_LARGEFILE_SUPPORT=ON
       - -DUSE_COLOR_BACKBUFFER=ON
       - -DUSE_LOCALE_DATA=ON
-      - -DBUILD_TOOLS=ON
+      - -DBUILD_TOOLS=OFF
       - -DUSE_GIF=ON
       - -DUSE_NANOSVG=ON
       - -DUSE_CHM=ON
       - -DUSE_ANTIWORD=ON
       - -DUSE_SHASUM=OFF
       - -DUSE_CMARK_GFM=ON
+      - -DUSE_MD4C=OFF
       - -DWITH_LIBPNG=ON
       - -DWITH_LIBJPEG=ON
       - -DWITH_FREETYPE=ON
@@ -80,8 +81,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crengine-ng.git
-        tag: 0.9.11
-        commit: abaa11c57abdebc63a47bb4faa02711d561967f7
+        tag: 0.9.12
+        commit: dd0597812e1c56a8d16b29ead1db867aa06760a9
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
