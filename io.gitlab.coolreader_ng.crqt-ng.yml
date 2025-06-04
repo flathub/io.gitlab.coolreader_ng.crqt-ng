@@ -1,6 +1,6 @@
 app-id: io.gitlab.coolreader_ng.crqt-ng
 runtime: org.kde.Platform
-runtime-version: 5.15-24.08
+runtime-version: 6.9
 sdk: org.kde.Sdk
 command: crqt
 rename-desktop-file: crqt.desktop
@@ -91,7 +91,7 @@ modules:
     builddir: true
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DUSE_QT=QT5
+      - -DUSE_QT=QT6
       - -DSTATIC_CRENGINE_NG=ON
     sources:
       - type: git
