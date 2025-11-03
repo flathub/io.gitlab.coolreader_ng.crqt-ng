@@ -71,6 +71,7 @@ modules:
       - -DUSE_MD4C=ON
       - -DWITH_LIBPNG=ON
       - -DWITH_LIBJPEG=ON
+      - -DWITH_LIBWEBP=ON
       - -DWITH_FREETYPE=ON
       - -DWITH_HARFBUZZ=ON
       - -DWITH_LIBUNIBREAK=ON
