@@ -46,8 +46,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/JuliaStrings/utf8proc.git
-        tag: v2.11.0
-        commit: d7bf128df773c2a1a7242eb80e51e91a769fc985
+        tag: v2.11.2
+        commit: 90daf9f396cfec91668758eb9cc54bd5248a6b89
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
