@@ -30,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/adah1972/libunibreak.git
-        tag: libunibreak_7_0
-        commit: 3ce4bfa3129ff3738046a44a6db533d2ce25af2b
+        tag: libunibreak_8_0
+        commit: 28a2756b864c343f438cd22537d49d394d4666a5
         x-checker-data:
           type: git
           tag-pattern: ^libunibreak_([\d_]+)$
@@ -47,8 +47,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/JuliaStrings/utf8proc.git
-        tag: v2.11.3
-        commit: e5e799221b45bbb90f5fdc5c69b6b8dfbf017e78
+        tag: v2.12.0
+        commit: 79cdd5ab40c79afa559f689ffc13b76812dee1ac
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -58,8 +58,7 @@ modules:
     builddir: true
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DCRE_BUILD_SHARED=OFF
-      - -DCRE_BUILD_STATIC=ON
+      - -DBUILD_SHARED_LIBS=OFF
       - -DENABLE_LARGEFILE_SUPPORT=ON
       - -DUSE_COLOR_BACKBUFFER=ON
       - -DUSE_LOCALE_DATA=ON
@@ -74,18 +73,20 @@ modules:
       - -DWITH_LIBPNG=ON
       - -DWITH_LIBJPEG=ON
       - -DWITH_LIBWEBP=ON
+      - -DWITH_LIBJXL=ON
       - -DWITH_FREETYPE=ON
       - -DWITH_HARFBUZZ=ON
       - -DWITH_LIBUNIBREAK=ON
       - -DWITH_FRIBIDI=ON
       - -DWITH_ZSTD=ON
+      - -DWITH_XXHASH=ON
       - -DWITH_UTF8PROC=ON
-      - -DUSE_FONTCONFIG=ON
+      - -DWITH_FONTCONFIG=ON
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crengine-ng.git
-        tag: 0.9.13
-        commit: ef51353d6afecc924b639ed9c8c57c5b5faa6e5d
+        tag: 0.9.14
+        commit: e4d1012001cd27a580020dd608fdefaa25d46f88
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
@@ -96,7 +97,6 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DUSE_QT=QT6
-      - -DSTATIC_CRENGINE_NG=ON
       - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
