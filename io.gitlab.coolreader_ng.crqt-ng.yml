@@ -3,8 +3,6 @@ runtime: org.kde.Platform
 runtime-version: '6.11'
 sdk: org.kde.Sdk
 command: crqt
-rename-desktop-file: crqt.desktop
-rename-appdata-file: crqt.appdata.xml
 rename-icon: crqt
 finish-args:
   - --share=ipc
@@ -97,12 +95,11 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DUSE_QT=QT6
-      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://gitlab.com/coolreader-ng/crqt-ng.git
-        tag: 1.0.15
-        commit: 0236d14882d44f4f7d5cd658e2578a068041dc2f
+        tag: 1.1.0
+        commit: fa8000614de36b8f41c370c2098438c17549da25
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
